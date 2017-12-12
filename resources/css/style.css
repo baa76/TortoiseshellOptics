@@ -155,3 +155,28 @@ footer .container {
     width: auto;
     padding-right: 1rem;
 }
+
+/* for tablets */
+
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        height: 22rem;
+        padding-top: 0rem;
+    }
+
+    .header-caption {
+        margin-top: 5rem;
+        margin-right: 2rem;
+    }
+
+    .header-caption h1 {
+        padding: 1.5rem 4rem;
+        font-size: 1.33rem;
+        line-height: 1.2rem;
+    }
+}
