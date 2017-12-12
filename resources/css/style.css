@@ -136,3 +136,22 @@ header nav span {
     color: white;
     padding: 0.5rem 1.25rem;
 }
+
+/* footer section */
+
+footer .container {
+    border: 1px solid black;
+    margin-top: 5rem;
+}
+
+.footer-logo {
+    display: flex;
+    padding: 4rem;
+    background-color: azure;
+}
+
+.footer-logo img {
+    height: 1.5rem;
+    width: auto;
+    padding-right: 1rem;
+}
