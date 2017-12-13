@@ -53,6 +53,10 @@ header nav span {
     padding: 1rem;
 }
 
+#mobile-menu {
+    display: none;
+}
+
 .header-caption {
     display: flex;
     justify-content: flex-end;
@@ -75,7 +79,7 @@ header nav span {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 3rem;
 }
 
@@ -87,7 +91,10 @@ header nav span {
     height: 8rem;
     width: 5rem;
     padding: 0 3rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+.info-graphics .container  figure .icon-container {
+    /* border: 1px solid black; */
 }
 
 .info-graphics .container #exams img {
@@ -105,7 +112,7 @@ header nav span {
     justify-content: center;
     align-content: flex-end;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* details section */
@@ -114,11 +121,11 @@ header nav span {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .detail-box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 35%;
     margin: 0 2.5%;
 }
@@ -126,7 +133,7 @@ header nav span {
 .detail-box-header {
     width: 15rem;
     background-color: cadetblue;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 1rem;
 }
 
@@ -140,7 +147,7 @@ header nav span {
 /* footer section */
 
 footer .container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 5rem;
 }
 
@@ -178,5 +185,150 @@ footer .container {
         padding: 1.5rem 4rem;
         font-size: 1.33rem;
         line-height: 1.2rem;
+    }
+}
+
+/* for phones */
+
+
+@media only screen and (max-width: 470px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner {
+        height: 17rem;
+        width: auto;
+        padding-top: 0rem;
+        background-position: 20%;
+    }
+
+    .header-logo h5 {
+        display: none;
+    }
+
+
+    .header-caption h1 {
+        padding: .75rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+
+    .header-caption {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin-top: 9rem;
+        margin-right: 0rem;
+    }
+
+    #desktop-tablet-menu {
+        display: none;
+    }
+    
+    #mobile-menu {
+        display: inline;
+    }
+
+    .info-graphics .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        margin: 3.77rem 0;
+    }
+    
+    .info-graphics .container  figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 5rem;
+        padding: 0 3rem;
+        /* margin: .77rem; */
+        /* border: 1px solid black; */
+    }
+
+   #fittings {
+        margin: 1.54rem 0;
+    }
+    
+    .info-graphics .container #exams img {
+        width: 3.5rem;
+        height: auto;
+    }
+    
+    .info-graphics .container figure img {
+        width: 5rem;
+        height: auto;
+    }
+    
+    .info-graphics .container figcaption {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        text-align: center;
+        font-size: 0.77rem;
+        line-height: 1rem;
+        margin-top: 1.54rem;
+        /* border: 1px solid black; */
+    }
+
+    .details .container {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        /* border: 1px solid black; */
+    }
+    
+    .detail-box {
+        /* border: 1px solid black; */
+        width: 100%;
+        margin: 0rem;
+    }
+
+  #philosophy {
+        margin-bottom: 4rem;
+    }
+    
+    .detail-box-header {
+        width: 100%;
+        background-color: cadetblue;
+        margin-bottom: 1rem;
+        /* border: 1px solid black; */
+    }
+    
+    .detail-box-header h5 {
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+        padding: 0.5rem 1.25rem;
+        text-align: center;
+    }
+    .detail-box-text {
+        padding: 0 0.5rem;
+        font-size: 0.77rem;
+        line-height: 1rem;
+    }
+
+    .footer-logo {
+
+    }
+
+    .footer-logo h5 {
+        display: none;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        padding: 4rem;
+        background-color: azure;
     }
 }
